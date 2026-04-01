@@ -1,25 +1,34 @@
 # Dependencies
 node_modules/
-package-lock.json
-yarn.lock
 
 # Build output
 dist/
 build/
 
-# Environment files
+# Environment variables
 .env
 .env.local
 .env.production
 
-# Editor directories
+# Editor
 .vscode/
 .idea/
+*.swp
+*.swo
 
-# OS files
+# OS
 .DS_Store
 Thumbs.db
 
 # Logs
-*.log
 npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Lock files (keep package-lock.json, ignore others)
+yarn.lock
+pnpm-lock.yaml
+
+# Vite
+.vite/
